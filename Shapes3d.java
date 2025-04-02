@@ -164,10 +164,16 @@ class Cylinder{
 
 public class Shapes3d {
     public static void main(String[] args){
-        Sphere ob = new Sphere();
-        ob.r = 67.89;                          //Providing value to the radius (input declared for class)
-        System.out.println(ob.surfArea());
-        System.out.println(ob.surfArea(45.77));     //Arguments are always given more preference than the class' own input
+        Sphere ob1 = new Sphere();
+        ob1.r = 67.89;                          //Providing value to the radius (input declared for class)
+        System.out.println(ob1.surfArea());
+        System.out.println(ob1.surfArea(45.77));     //Arguments are always given more preference than the class' own input
+
+        Cylinder ob2 = new Cylinder();
+        ob2.r = 8.33;
+        ob2.h = 30.76;
+        System.out.println(ob2.volume());
+        
     }
 
 }
